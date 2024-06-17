@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Vite App</title>
+  </head>
+  <body class="relative grayish-purple-bg">
+    <picture>
+      <source
+        srcset="./assets/images/background-pattern-desktop.svg"
+        media="(min-width: 376px)"
+      />
+      <source
+        srcset="./assets/images/background-pattern-mobile.svg"
+        media="(max-width:
+        375px)"
+      />
+      <img
+        src="./assets/images/background-pattern-mobile.svg"
+        alt="mobile-pattern"
+      />
+    </picture>
+    <main
+      class="absolute border-2 border-solid border-black top-36 left-3 white w-[350px] overflow-y-auto lg:max-w-[500px] lg:left-80"
+    >
+      <div class="h-full px-4 py-4 flex flex-col">
+        <div class="w-[120px] flex justify-between lg:w-[200px]">
+          <img src="./assets/images/icon-star.svg" alt="icon-star" />
+          <h1 class="text-3xl lg:text-6xl">FAQs</h1>
+        </div>
+        <section class="border-b-2 border-gray-500 pb-2 flex-shrink-0">
+          <div class="faq-header mt-10 flex w-full justify-between">
+            <h2 class="w-[240px] dark-purple lg:w-[300px] lg:text-2xl">
+              What is Frontend Mentor, and how will it help me?
+            </h2>
+            <button class="faq-button-toggle">
+              <span class="faq-icons plus-icon"> </span>
+            </button>
+          </div>
+          <p class="faq-answer py-4 grayish-purple-text lg:text-xl" style="display: none">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </section>
+        <section class="border-b-2 border-gray-500 pb-2 flex-shrink-0">
+          <div class="faq-header mt-10 flex w-full justify-between">
+            <h2 class="w-[240px] dark-purple lg:w-[300px] lg:text-2xl">Is Frontend Mentor free?</h2>
+            <button class="faq-button-toggle">
+              <span class="faq-icons plus-icon"> </span>
+            </button>
+          </div>
+          <p class="faq-answer py-4 grayish-purple-text lg:text-xl" style="display: none">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </section>
+        <section class="border-b-2 border-gray-500 pb-2 flex-shrink-0">
+          <div class="faq-header mt-10 flex w-full justify-between">
+            <h2 class="w-[240px] dark-purple lg:w-[300px] lg:text-2xl">
+              Can I use Frontend Mentor projects in my portfolio?
+            </h2>
+            <button class="faq-button-toggle">
+              <span class="faq-icons plus-icon"> </span>
+            </button>
+          </div>
+          <p class="faq-answer py-4 grayish-purple-text lg:text-xl" style="display: none">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </section>
+        <section class="border-b-2 border-gray-500 pb-2 flex-shrink-0">
+          <div class="faq-header mt-10 flex w-full justify-between">
+            <h2 class="w-[240px] dark-purple lg:w-[300px] lg:text-2xl">
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+            </h2>
+            <button class="faq-button-toggle">
+              <span class="faq-icons plus-icon lg:w-40 lg:h-40"> </span>
+            </button>
+          </div>
+          <p class="faq-answer py-4 grayish-purple-text lg:text-xl" style="display: none">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- <div id="app"></div> -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
